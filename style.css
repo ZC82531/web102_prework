@@ -21,6 +21,12 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center; /* This is most aesthetically simple, and no explicit instructions of how to use align-items */
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -62,7 +68,7 @@ body {
     box-shadow: 0 0 30px lightblue;
 }
 
-#button-container {
+#button-container, #sorting-container { /* I wanted to add same attributes to the div underneath the original */
     text-align: center;
 }
 
